@@ -1,0 +1,20 @@
+{
+  "name": "nexgen_websitr",
+  "version": "1.0.0",
+  "description": "A bold media digital create next gen website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "ejs": "^3.1.10",
+    "express": "^5.2.1",
+    "node-ejs": "^1.2.3",
+    "nodemailer": "^7.0.12",
+    "nodemon": "^3.1.11",
+    "path": "^0.12.7"
+  }
+}

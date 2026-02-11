@@ -1,0 +1,176 @@
+/*!
+*    ______ _       _   _
+*    |  ____| |     | | (_)
+*    | |__  | | __ _| |_ _  ___ ___  _ __
+*    |  __| | |/ _` | __| |/ __/ _ \| '_ \
+*    | |    | | (_| | |_| | (_| (_) | | | |
+*    |_|    |_|\__,_|\__|_|\___\___/|_| |_|
+*
+*         https://www.flaticon.com
+*/
+
+@font-face {
+    font-family: "flaticon_mycollection";
+    src: url("flaticon_mycollection612b.woff2?23d3dd0780d987b165ecb54bdbd91e97") format("woff2"),
+url("flaticon_mycollection612b.woff?23d3dd0780d987b165ecb54bdbd91e97") format("woff"),
+url("flaticon_mycollection612b.eot?23d3dd0780d987b165ecb54bdbd91e97#iefix") format("embedded-opentype"),
+url("flaticon_mycollection612b.ttf?23d3dd0780d987b165ecb54bdbd91e97") format("truetype"),
+url("flaticon_mycollection612b.svg?23d3dd0780d987b165ecb54bdbd91e97#flaticon_mycollection") format("svg")
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_mycollection !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-strategic-vision:before {
+    content: "\f101";
+}
+.flaticon-loyalty:before {
+    content: "\f102";
+}
+.flaticon-financial-advisor:before {
+    content: "\f103";
+}
+.flaticon-consultancy:before {
+    content: "\f104";
+}
+.flaticon-it-service:before {
+    content: "\f105";
+}
+.flaticon-search-analysis:before {
+    content: "\f106";
+}
+.flaticon-planning:before {
+    content: "\f107";
+}
+.flaticon-monitor:before {
+    content: "\f108";
+}
+.flaticon-key-performance-indicator:before {
+    content: "\f109";
+}
+.flaticon-team-work:before {
+    content: "\f10a";
+}
+.flaticon-calendar:before {
+    content: "\f10b";
+}
+.flaticon-quote:before {
+    content: "\f10c";
+}
+.flaticon-talk:before {
+    content: "\f10d";
+}
+.flaticon-solution:before {
+    content: "\f10e";
+}
+.flaticon-research:before {
+    content: "\f10f";
+}
+.flaticon-mitigation:before {
+    content: "\f110";
+}
+.flaticon-trust:before {
+    content: "\f111";
+}
+.flaticon-refinement:before {
+    content: "\f112";
+}
+.flaticon-team:before {
+    content: "\f113";
+}
+.flaticon-monitoring:before {
+    content: "\f114";
+}
+.flaticon-growth:before {
+    content: "\f115";
+}
+.flaticon-administrator:before {
+    content: "\f116";
+}
+.flaticon-chat:before {
+    content: "\f117";
+}
+.flaticon-evaluation:before {
+    content: "\f118";
+}
+.flaticon-value-chain:before {
+    content: "\f119";
+}
+.flaticon-enrichment:before {
+    content: "\f11a";
+}
+.flaticon-skills-enhancement:before {
+    content: "\f11b";
+}
+.flaticon-mergers:before {
+    content: "\f11c";
+}
+.flaticon-data-analytics:before {
+    content: "\f11d";
+}
+.flaticon-save-money:before {
+    content: "\f11e";
+}
+.flaticon-mentoring:before {
+    content: "\f11f";
+}
+.flaticon-targeting:before {
+    content: "\f120";
+}
+.flaticon-market-penetration:before {
+    content: "\f121";
+}
+.flaticon-strategic:before {
+    content: "\f122";
+}
+.flaticon-phone-call:before {
+    content: "\f123";
+}
+.flaticon-right-arrow:before {
+    content: "\f124";
+}
+.flaticon-right:before {
+    content: "\f125";
+}
+.flaticon-hand:before {
+    content: "\f126";
+}
+.flaticon-bars:before {
+    content: "\f127";
+}
+.flaticon-agreement:before {
+    content: "\f128";
+}
+.flaticon-accounting:before {
+    content: "\f129";
+}
+.flaticon-risk:before {
+    content: "\f12a";
+}
+.flaticon-innovation:before {
+    content: "\f12b";
+}
+.flaticon-values:before {
+    content: "\f12c";
+}
+.flaticon-core-values:before {
+    content: "\f12d";
+}
+.flaticon-customer-support:before {
+    content: "\f12e";
+}
+.flaticon-economic-growth:before {
+    content: "\f12f";
+}
+.flaticon-countries:before {
+    content: "\f130";
+}
+

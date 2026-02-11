@@ -1,0 +1,420 @@
+<%- include('../partials/header') %>
+    <style>
+        .inner-slide-element {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .brand-logo-img {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 20px 24px;
+            /* box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08); */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 300px;
+            transition: all 0.3s ease;
+        }
+
+        .brand-prev,
+        .brand-next {
+            background: #fca21a;
+            border-radius: 50%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            width: 45px;
+            height: 45px;
+        }
+
+        .brand-prev::after,
+        .brand-next::after {
+            font-size: 16px;
+            color: #000;
+        }
+
+    </style>
+    <main>
+        <%- include('../partials/loader') %>
+            <div id="smooth-wrapper">
+                <div id="smooth-content">
+                    <%- include('../partials/navbar') %>
+                        <section class="banner-one-section ">
+                            <div class="banner-slider swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="banner-slider-card bg-img" data-background-image="/images/banner/banner-card-bg.jpg">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-lg-6 align-self-center">
+                                                        <div class="banner-content">
+                                                            <h1>Your Trusted <b>Digital Services Agency Based</b> in Sri Lanka </h1>
+                                                            <div class="button-group d-flex gap-5 flex-wrap align-items-center">
+                                                                <a href="/about" class="btn-round">
+                                                                    <span>
+                                                                About Us
+                                                            </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 align-self-center d-none d-lg-block">
+                                                        <div class="banner-image">
+                                                            <div class="border-shape"></div>
+                                                            <div class="img">
+                                                                <img src="/images/banner/banner-card1.jpg" alt="banner">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="banner-slider-card bg-img" data-background-image="/images/banner/banner-card-bg.jpg">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-lg-6 align-self-center">
+                                                        <div class="banner-content">
+                                                            <div class="btn-round banner-sub-title">
+                                                                <span>WE ARE EXPERT IN THIS FIELD</span>
+                                                            </div>
+                                                            <h1>Your Trusted <b>Consulting Agency Based</b> On USA </h1>
+                                                            <div class="button-group d-flex gap-5 flex-wrap align-items-center">
+                                                                <a href="/about" class="btn-round">
+                                                                    <span>
+                                                                About Us
+                                                            </span>
+                                                                </a>
+                                                                <div class="video-play">
+                                                                    <a href="https://www.youtube.com/watch?v=TfU0qjuZkJ4" class="video-play-btn">
+                                                                        <i class="fa-solid fa-play"></i>
+                                                                    </a>
+                                                                    Watch Video
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 align-self-center d-none d-lg-block">
+                                                        <div class="banner-image">
+                                                            <div class="border-shape"></div>
+                                                            <div class="img">
+                                                                <img src="/images/banner/banner-card1.jpg" alt="banner">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="about-one-section py-120">
+                            <div class="container">
+                                <div class="row row-gap-4">
+                                    <div class="col-xl-6">
+                                        <div class="about-img me-xl-3 right-reveal">
+                                            <div class="img">
+                                                <img src="/images/about/about-img.jpg" alt="about" class="img-fluid">
+                                                <div class="img-text">
+                                                    <div>
+                                                        <div class="number">
+                                                            <span class="odometer" data-odometer-final="20">05</span>+
+                                                        </div>
+                                                        <p>Years Experience</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div class="about-text ms-xl-3">
+                                            <div class="section-header-one">
+                                                <h3 class="right-reveal">About Us</h6>
+                                                    <h2 class="title-animation">
+                                                        Nexgen Digital Services
+                                                    </h2>
+                                                    <p class="right-reveal" style="color: black;">Nexgen Digital Services is a global digital services and solutions company specializing in building, operating, and scaling high-impact digital ecosystems for telecom operators and digital partners.
+                                                    </p>
+                                            </div>
+                                            <div class="about-list ">
+                                                <div class="list-item top-reveal">
+                                                    <div class="icon">
+                                                        <i class="flaticon-targeting"></i>
+                                                    </div>
+                                                    <div class="text">
+                                                        <h5>Strategic Mission</h5>
+                                                        <p style="color: black;">To empower telecom operators and digital partners by delivering scalable, secure, and innovative digital solutions that accelerate growth, enhance customer experiences, and create measurable business
+                                                            impact across global markets.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="list-item top-reveal">
+                                                    <div class="icon">
+                                                        <i class="flaticon-strategic"></i>
+                                                    </div>
+                                                    <div class="text">
+                                                        <h5>Strategic Vision</h5>
+                                                        <p style="color: black;">To be a globally trusted digital transformation partner, shaping the future of connected ecosystems through cutting-edge technology, data-driven innovation, and sustainable digital platforms.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="list-item top-reveal">
+                                                    <div class="icon">
+                                                        <i class="flaticon-loyalty"></i>
+                                                    </div>
+                                                    <div class="text">
+                                                        <h5>Core Values</h5>
+                                                        <p style="color: black;">We are guided by integrity, innovation, and customer-centricity—committed to excellence, long-term partnerships, continuous improvement, and responsible digital growth that creates value for businesses
+                                                            and communities alike.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="services-one-section section-bg py-120">
+                            <div class="container">
+                                <div class="row row-gap-4">
+                                    <div class="col-xl-5 align-self-center">
+                                        <div class="section-header-one">
+                                            <h3 class="right-reveal">Services</h6>
+                                                <h2 class="title-animation">Transformation
+                                                    <span style="color : #fca21a !important;">Digital Service</span>
+                                                </h2>
+                                                <p class="right-reveal">We deliver end-to-end digital services tailored for telecom operators, enabling rapid deployment, scalable platforms, and revenue-driven digital ecosystems that enhance customer engagement and operational
+                                                    efficiency.
+                                                </p>
+                                        </div>
+                                        <div class="mt-5 right-reveal">
+                                            <a href="" class="btn-round">
+                                                <span>
+                                            All Services
+                                        </span>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-xl-7 align-self-center">
+                                        <div class="row row-gap-4 mt-4 mt-xl-0">
+                                            <div class="col-lg-6 col-md-6 right-reveal">
+                                                <div class="services-one-box active">
+                                                    <div class="icon">
+                                                        <i class="flaticon-financial-advisor"></i>
+                                                        <h5><a href="#">Telecom Revenue & Billing</a></h5>
+                                                    </div>
+                                                    <p>We design and manage intelligent billing, charging, and revenue assurance systems that help telecom operators maximize profitability and reduce revenue leakage.</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 left-reveal">
+                                                <div class="services-one-box">
+                                                    <div class="icon">
+                                                        <i class="flaticon-consultancy"></i>
+                                                        <h5><a href="#">Digital VAS & Engagement</a></h5>
+                                                    </div>
+                                                    <p>We enable telecom operators to launch and scale value-added services, loyalty programs, and digital content platforms that drive ARPU growth.</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 right-reveal">
+                                                <div class="services-one-box">
+                                                    <div class="icon">
+                                                        <i class="flaticon-it-service"></i>
+                                                        <h5><a href="#">Telecom IT Platforms</a></h5>
+                                                    </div>
+                                                    <p>Our telecom IT services include system integration, API management, cloud platforms, and secure digital infrastructure for large-scale operations.</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 left-reveal">
+                                                <div class="services-one-box">
+                                                    <div class="icon">
+                                                        <i class="flaticon-key-performance-indicator"></i>
+                                                        <h5>
+                                                            <a href="#">Compliance & Regulatory</a>
+                                                        </h5>
+                                                    </div>
+                                                    <p>We support telecom operators with regulatory compliance, reporting, and secure data handling aligned with local and global telecom standards.</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 left-reveal">
+                                                <div class="services-one-box">
+                                                    <div class="icon">
+                                                        <i class="flaticon-key-performance-indicator"></i>
+                                                        <h5>
+                                                            <a href="#">Mega Promo</a>
+                                                        </h5>
+                                                    </div>
+                                                    <p>Nexgen through its global partners Mega Promo platform is a high-impact promotional engine designed to boost subscriber engagement and loyalty.</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6 left-reveal">
+                                                <div class="services-one-box">
+                                                    <div class="icon">
+                                                        <i class="flaticon-key-performance-indicator"></i>
+                                                        <h5>
+                                                            <a href="#">VOD / OTT Services</a>
+                                                        </h5>
+                                                    </div>
+                                                    <p>Arbees World through its content partners delivers premium Video-on-Demand (VOD) and Over-The-Top (OTT) content services that bring world-class entertainment to mobile users across all networks.</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6 left-reveal">
+                                                <div class="services-one-box">
+                                                    <div class="icon">
+                                                        <i class="flaticon-key-performance-indicator"></i>
+                                                        <h5>
+                                                            <a href="#">Beauty</a>
+                                                        </h5>
+                                                    </div>
+                                                    <p>This lifestyle-driven service not only enhances user engagement but also positions telecom operators as enablers of personal expression, wellness, and modern living.</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6 left-reveal">
+                                                <div class="services-one-box">
+                                                    <div class="icon">
+                                                        <i class="flaticon-key-performance-indicator"></i>
+                                                        <h5>
+                                                            <a href="#">Fitness</a>
+                                                        </h5>
+                                                    </div>
+                                                    <p>NexGen offers a mobile-first fitness VAS service designed to promote health and wellness across all user segments. From daily workout routines and guided audio/video sessions to nutrition tips and wellness
+                                                        challenges, our service is accessible via SMS, IVR, web, and app — making it inclusive for both smartphone and feature phone users.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <div class="company-section pb-10 @@py @@section_company">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="swiper brand-active-slid">
+                                            <div class="swiper-wrapper slide-transition">
+                                                <div class="swiper-slide inner-slide-element">
+                                                    <div class="brand-logo-img">
+                                                        <img src="https://arbeesworld.co.za/c4.png" alt="brands">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide inner-slide-element">
+                                                    <div class="brand-logo-img">
+                                                        <img src="data:image/png;base64,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"
+                                                            alt="brands">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide inner-slide-element">
+                                                    <div class="brand-logo-img">
+                                                        <img src="data:image/png;base64,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"
+                                                            alt="brands">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide inner-slide-element">
+                                                    <div class="brand-logo-img">
+                                                        <img src="data:image/png;base64,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"
+                                                            alt="brands">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide inner-slide-element">
+                                                    <div class="brand-logo-img">
+                                                        <img src="data:image/png;base64,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"
+                                                            alt="brands">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide inner-slide-element">
+                                                    <div class="brand-logo-img">
+                                                        <img src="data:image/jpeg;base64,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"
+                                                            alt="brands">
+                                                    </div>
+                                                </div>
+                                                  <div class="swiper-slide inner-slide-element">
+                                                    <div class="brand-logo-img">
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Ubisoft_logo.svg"
+                                                            alt="brands">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide inner-slide-element">
+                                                    <div class="brand-logo-img">
+                                                        <img src="data:image/png;base64,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"
+                                                            alt="brands">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide inner-slide-element">
+                                                    <div class="brand-logo-img">
+                                                        <img src="https://play-lh.googleusercontent.com/HNwhkvDKPwDd4V0qPtPFO9--RWzTVrtmBDwMLyUQJ2k1v14ZoIr7FDQM7sjoC-MwTFE"
+                                                            alt="brands">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide inner-slide-element">
+                                                    <div class="brand-logo-img">
+                                                        <img src="https://www.dialog.lk/themes/custom/dialog_theme/logo.svg"
+                                                            alt="brands">
+                                                    </div>
+                                                </div>  
+                                            </div>
+                                            <div class="swiper-button-prev brand-prev"></div>
+                                            <div class="swiper-button-next brand-next"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <%- include('../partials/footer') %>
+                </div>
+            </div>
+    </main>
+   <script>
+const brandSwiper = new Swiper(".brand-active-slid", {
+    loop: true,
+    spaceBetween: 30,
+
+    slidesPerView: "auto",
+    speed: 4000,
+
+    autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+    },
+
+    freeMode: true,
+    freeModeMomentum: false,
+
+    navigation: {
+        nextEl: ".brand-next",
+        prevEl: ".brand-prev",
+    },
+
+    breakpoints: {
+        320: { slidesPerView: 2 },
+        576: { slidesPerView: 2 },
+        768: { slidesPerView: 3 },
+        992: { slidesPerView: 4 },
+        1200: { slidesPerView: 4 },
+    },
+});
+
+// 👇 IMPORTANT: stop autoplay when clicking buttons
+document.querySelector('.brand-next').addEventListener('click', () => {
+    brandSwiper.autoplay.stop();
+    brandSwiper.slideNext(1200);
+});
+
+document.querySelector('.brand-prev').addEventListener('click', () => {
+    brandSwiper.autoplay.stop();
+    brandSwiper.slidePrev(1200);
+});
+</script>
+
+
+
+
+    <%- include('../partials/footer-include') %>
