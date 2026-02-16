@@ -1,4 +1,90 @@
 <%- include('../partials/header') %>
+    <style>
+        .partner-section {
+    padding: 60px 20px;
+    background: #ffffff;
+    text-align: center;
+}
+
+.partner-section h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.slider-container {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.slide img {
+    max-width: 120px;
+    max-height: 60px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.slide img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* Buttons */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #111827;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 16px;
+    z-index: 10;
+}
+
+.nav-btn:hover {
+    background: #374151;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .slide { flex: 0 0 25%; }
+}
+
+@media (max-width: 768px) {
+    .slide { flex: 0 0 33.33%; }
+}
+
+@media (max-width: 480px) {
+    .slide { flex: 0 0 50%; }
+}
+    </style>
     <main>
         <%- include('../partials/loader') %>
             <div id="smooth-wrapper">
@@ -51,7 +137,7 @@
                                     <div class="col-xl-7 align-self-center">
                                         <div class="row row-gap-4 mt-4 mt-xl-0">
                                             <div class="col-lg-6 col-md-6 right-reveal">
-                                                <div class="services-one-box active">
+                                                <div class="services-one-box">
                                                     <div class="icon">
                                                         <i class="flaticon-financial-advisor"></i>
                                                         <h5><a href="#">Fitness Portal</a></h5>
@@ -92,7 +178,7 @@
                                                     </div>
                                                     <p>This is a first‑of‑its‑kind opportunity where we introduce esports as a VAS subscription model. Users simply subscribe and gain access to participate in all major competitive titles, including Free Fire,
                                                         PUBG, Soccer, Call of Duty, and many others. We see a strong commercial potential here, as the esports market in Sri Lanka is projected to grow significantly, reaching an estimated US $200.70 million
-                                                        by 2025. This positions the service perfectly to capture early demand, drive high engagement, and establish With Our Strategic Telecommunication Partners as a pioneer in the esports VAS ecosystem.</p>
+                                                        by 2026. This positions the service perfectly to capture early demand, drive high engagement, and establish with our strategic telecommunication partners as a pioneer in the esports VAS ecosystem.</p>
                                                 </div>
                                             </div>
 

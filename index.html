@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Partner Logo Slider</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+}
+
+
+</style>
+</head>
+<body>
+
+<section class="partner-section">
+    <h2>Our Trusted Partners</h2>
+
+    <div class="slider-container">
+        <button class="nav-btn prev">&#10094;</button>
+        <div class="slider" id="slider">
+            <div class="slide"><img src="https://via.placeholder.com/150x60?text=Logo+1"></div>
+            <div class="slide"><img src="https://via.placeholder.com/150x60?text=Logo+2"></div>
+            <div class="slide"><img src="https://via.placeholder.com/150x60?text=Logo+3"></div>
+            <div class="slide"><img src="https://via.placeholder.com/150x60?text=Logo+4"></div>
+            <div class="slide"><img src="https://via.placeholder.com/150x60?text=Logo+5"></div>
+            <div class="slide"><img src="https://via.placeholder.com/150x60?text=Logo+6"></div>
+            <div class="slide"><img src="https://via.placeholder.com/150x60?text=Logo+7"></div>
+            <div class="slide"><img src="https://via.placeholder.com/150x60?text=Logo+8"></div>
+        </div>
+        <button class="nav-btn next">&#10095;</button>
+    </div>
+</section>
+
+<script>
+const slider = document.getElementById("slider");
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+
+let index = 0;
+let slideWidth = document.querySelector(".slide").offsetWidth;
+let totalSlides = document.querySelectorAll(".slide").length;
+
+function updateSlider() {
+    slider.style.transform = `translateX(-${index * slideWidth}px)`;
+}
+
+function nextSlide() {
+    if (index < totalSlides - Math.floor(slider.parentElement.offsetWidth / slideWidth)) {
+        index++;
+    } else {
+        index = 0;
+    }
+    updateSlider();
+}
+
+function prevSlide() {
+    if (index > 0) {
+        index--;
+    } else {
+        index = totalSlides - Math.floor(slider.parentElement.offsetWidth / slideWidth);
+    }
+    updateSlider();
+}
+
+nextBtn.addEventListener("click", nextSlide);
+prevBtn.addEventListener("click", prevSlide);
+
+/* Auto Slide */
+let autoSlide = setInterval(nextSlide, 3000);
+
+/* Pause on hover */
+slider.parentElement.addEventListener("mouseenter", () => clearInterval(autoSlide));
+slider.parentElement.addEventListener("mouseleave", () => {
+    autoSlide = setInterval(nextSlide, 3000);
+});
+
+/* Responsive Fix */
+window.addEventListener("resize", () => {
+    slideWidth = document.querySelector(".slide").offsetWidth;
+    updateSlider();
+});
+</script>
+
+</body>
+</html>
